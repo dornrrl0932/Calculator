@@ -12,9 +12,7 @@ public class Calculator2 {
 
     //사칙연산 수행
     public void calculator(int number1, String operator, int number2) {
-
         int result = 0;
-
         switch (operator) {
             case "+":
                 result = number1 + number2;
@@ -32,9 +30,21 @@ public class Calculator2 {
                     System.out.println("[error] 0으로 나눌 수 없습니다. 다른 수를 입력해주세요.");
                 }
                 break;
+
         }
-
+        results.add(result);
     }
-    //결과값을 반환하는 메서드p
-}     // 연산결과를 저장하는 컬렉션
 
+    // 외부에서 리스트 확인
+    public ArrayList<Integer> getResults() {
+        return new ArrayList<Integer>(); // 기존 리스트를 복제, 복사본 반환
+    }
+
+    //첫번째 저장 결과 삭제 메서드
+    public void firstResultRemove() {
+        if(results.isEmpty()) {
+            results.remove(0);
+        } System.out.println("연산 결과가 없습니다.");
+    }
+
+}

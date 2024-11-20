@@ -1,10 +1,9 @@
 package Calculator;
-
 import java.util.Scanner;
 
 public class Calculator1 {
     public static void main(String[] args) {
-
+        Calculator2 calculator = new Calculator2(); //calculator 객체 생성
         Scanner scanner = new Scanner(System.in);//스캐너 객체 생성
         boolean continueCalculator = true;
 

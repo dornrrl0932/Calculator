@@ -12,7 +12,11 @@ public class Calculator2 {
 
     //사칙연산 수행
     public void calculator(int number1, String operator, int number2) {
+
+
         int result = 0;
+
+
         switch (operator) {
             case "+":
                 result = number1 + number2;
@@ -31,6 +35,7 @@ public class Calculator2 {
                 }
                 break;
 
+
         }
         results.add(result);
     }
@@ -48,3 +53,4 @@ public class Calculator2 {
     }
 
 }
+
